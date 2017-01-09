@@ -1,5 +1,4 @@
-# Magnetic Front-End Workflow
-
+# Github Profile viewer
 ## Features
 - scss compiler
 - babel (ES2015)

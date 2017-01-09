@@ -1,7 +1,7 @@
 {
-  "name": "front-end-workflow",
+  "name": "gitviewer",
   "version": "1.0.0",
-  "description": "Magnetic Front-End Workflow",
+  "description": "Github profile viewer",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,7 +19,7 @@
     "webpack",
     "babel"
   ],
-  "author": "Sebastian Opperman",
+  "author": "Jahil Khalfe",
   "license": "ISC",
   "homepage": "https://bitbucket.org/magneticcreativesa/front-end-workflow#readme",
   "devDependencies": {
