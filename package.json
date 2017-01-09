@@ -1,0 +1,75 @@
+{
+  "name": "front-end-workflow",
+  "version": "1.0.0",
+  "description": "Magnetic Front-End Workflow",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodejs-dashboard node ./dist/js/dev.index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/magneticcreativesa/front-end-workflow.git"
+  },
+  "keywords": [
+    "workflow",
+    "javascript",
+    "scss",
+    "webpack",
+    "babel"
+  ],
+  "author": "Sebastian Opperman",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/magneticcreativesa/front-end-workflow#readme",
+  "devDependencies": {
+    "auto-inject-webpack-plugin": "^1.0.1",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-es2015": "^6.18.0",
+    "browser-sync": "^2.18.2",
+    "customizr": "^1.0.0-alpha",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-iconfont": "^8.0.1",
+    "gulp-iconfont-css": "^2.1.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-inject": "^4.1.0",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-modernizr": "^1.0.0-alpha",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.11",
+    "gulp-webpack": "^1.5.0",
+    "imagemin-pngquant": "^5.0.0",
+    "normalize.scss": "^0.1.0",
+    "react": "^15.4.1",
+    "run-sequence": "^1.2.2",
+    "sass-module-importer": "^1.4.0",
+    "susy": "^2.2.12"
+  },
+  "config": {
+    "dev": true,
+    "src": "./src/",
+    "dist": "./dist/",
+    "publicDir": "./",
+    "modernizr": [
+      "flexbox"
+    ],
+    "server": {
+      "proxy": false,
+      "address": "",
+      "port": 8080
+    }
+  },
+  "dependencies": {
+    "babel-preset-react": "^6.16.0",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "nodejs-dashboard": "^0.2.1",
+    "now": "^0.36.2",
+    "react-dom": "^15.4.1",
+    "susy": "^2.2.12"
+  }
+}

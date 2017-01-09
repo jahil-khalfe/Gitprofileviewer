@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'app_icons';
+  src: url('../fonts/icons/app_icons.eot');
+  src: url('../fonts/icons/app_icons.eot?#iefix') format('eot'),
+  url('../fonts/icons/app_icons.woff') format('woff'),
+  url('../fonts/icons/app_icons.ttf') format('truetype'),
+  url('../fonts/icons/app_icons.svg#app_icons') format('svg');
+}
+
+@mixin icon-styles {
+  font-family: 'app_icons';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  overflow: hidden;
+  // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+  text-decoration: none;
+  text-transform: none;
+}
+
+%icon {
+  @include icon-styles;
+}
+
+@function icon-char($filename) {
+  $char: '';
+
+  @if $filename == mute {
+  $char: '\E001';
+}
+  @if $filename == pause {
+  $char: '\E002';
+}
+  @if $filename == play {
+  $char: '\E003';
+}
+
+@return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+&:#{$insert} {
+  @if $extend {
+    @extend %icon;
+  } @else {
+    @include icon-styles;
+  }
+  content: icon-char($filename);
+}
+}
+
+.icon-mute {
+  @include icon(mute);
+}
+
+.icon-pause {
+  @include icon(pause);
+}
+
+.icon-play {
+  @include icon(play);
+}
+

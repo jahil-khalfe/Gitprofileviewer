@@ -1,0 +1,35 @@
+$base-line-height: 18px;
+
+$susy:	(
+    columns:	12,
+    container: 1140px,
+    global-box-sizing:	border-box,
+    debug:	(
+        image: false,
+        color: pink,
+        output: background
+    )
+);
+
+$susy-rtl: (
+    columns:	12,
+    container: 1140px,
+    global-box-sizing:	border-box,
+    flow: rtl,
+    debug:	(
+        image: hide,
+        color: pink,
+        output: background
+    )
+);
+
+@include border-box-sizing();
+
+// inner class for container
+*[class$=-inner] {
+  @include container();
+  padding: 0 1em;
+  @media all and(max-width: map-get($breakpoints, md)) {
+    overflow: hidden;
+  }
+}

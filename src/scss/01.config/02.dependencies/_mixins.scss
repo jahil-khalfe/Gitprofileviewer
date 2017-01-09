@@ -1,0 +1,6 @@
+// set breakpoint mixin
+@mixin bp($size, $context:12) {
+  @include susy-breakpoint(map-get($breakpoints, $size), $context) {
+    @content;
+  }
+}
