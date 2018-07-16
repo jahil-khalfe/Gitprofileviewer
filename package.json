@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodejs-dashboard node ./dist/js/dev.index.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -65,11 +67,13 @@
   },
   "dependencies": {
     "babel-preset-react": "^6.16.0",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^4.0.0",
     "jquery": "^3.1.1",
     "nodejs-dashboard": "^0.2.1",
-    "now": "^0.36.2",
+    "now": "^5.3.2",
     "react-dom": "^15.4.1",
-    "susy": "^2.2.12"
-  }
+    "susy": "^2.2.12",
+    "snyk": "^1.88.2"
+  },
+  "snyk": true
 }
