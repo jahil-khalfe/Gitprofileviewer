@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.12.0
+version: v1.13.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -133,3 +133,13 @@ patch:
   'npm:request:20160119':
     - nodejs-dashboard > blessed-contrib > picture-tube > request:
         patched: '2018-07-16T06:14:18.830Z'
+  'npm:mime:20170907':
+    - nodejs-dashboard > socketio > express > serve-static > send > mime:
+        patched: '2018-12-04T03:52:54.573Z'
+    - nodejs-dashboard > socketio > express > send > mime:
+        patched: '2018-12-04T03:52:54.573Z'
+  'npm:ws:20160920':
+    - nodejs-dashboard > socketio > socket.io > engine.io > ws:
+        patched: '2018-12-04T03:52:54.573Z'
+    - nodejs-dashboard > socketio > socket.io > socket.io-client > engine.io-client > ws:
+        patched: '2018-12-04T03:52:54.573Z'
