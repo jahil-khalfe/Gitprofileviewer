@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.12.0
+version: v1.14.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -133,3 +133,14 @@ patch:
   'npm:request:20160119':
     - nodejs-dashboard > blessed-contrib > picture-tube > request:
         patched: '2018-07-16T06:14:18.830Z'
+  SNYK-JS-LODASH-567746:
+    - nodejs-dashboard > lodash:
+        patched: '2020-05-01T00:12:48.164Z'
+    - nodejs-dashboard > blessed-contrib > lodash:
+        patched: '2020-05-01T00:12:48.164Z'
+    - babel-preset-react > babel-plugin-transform-react-jsx > babel-helper-builder-react-jsx > lodash:
+        patched: '2020-05-01T00:12:48.164Z'
+    - babel-preset-react > babel-plugin-transform-react-jsx > babel-helper-builder-react-jsx > babel-types > lodash:
+        patched: '2020-05-01T00:12:48.164Z'
+    - nodejs-dashboard > blessed-contrib > map-canvas > xml2js > xmlbuilder > lodash:
+        patched: '2020-05-01T00:12:48.164Z'
